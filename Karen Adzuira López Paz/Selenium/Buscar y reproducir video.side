@@ -1,0 +1,101 @@
+{
+  "id": "03db1eee-4d76-48de-8c87-bca2a467c079",
+  "version": "2.0",
+  "name": "karen",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "38b7e450-5328-435f-9f6e-4194f1805f98",
+    "name": "buscarYreproducirAliciaEnElPaisDeLasMaravillas",
+    "commands": [{
+      "id": "84bd4c99-c751-4127-8053-9b7e9e22366a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1ef507e-0d82-4ea2-a422-bfab1f0f7cf0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adb4bd26-f0a3-4965-a079-af964d4c7a5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bedb51b0-b654-4c28-885a-592912e5db48",
+      "comment": "",
+      "command": "type",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "alicia en el pais de las maravillas"
+    }, {
+      "id": "0d3776dd-2faa-428d-b012-2dab25b1c542",
+      "comment": "",
+      "command": "click",
+      "target": "css=.magnifyingglass",
+      "targets": [
+        ["css=.magnifyingglass", "css:finder"],
+        ["xpath=//button[@id='navbar-submit-button']/div", "xpath:idRelative"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bce1dab-cd41-4576-8d38-8e104797b63e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Alicia en el País de las Maravillas",
+      "targets": [
+        ["linkText=Alicia en el País de las Maravillas", "linkText"],
+        ["css=.findResult:nth-child(1) > .result_text > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Alicia en el País de las Maravillas')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div[2]/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/title/tt1014759/?ref_=fn_al_tt_1')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Alicia en el País de las Maravillas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccf8d7e0-1f1a-48cc-bb54-5db5a8c4d347",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi975438873?playlistId=tt1014759&ref_=tt_ov_vi')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "536fd910-c089-49b8-a7ab-491ade3fe342",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["38b7e450-5328-435f-9f6e-4194f1805f98"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
